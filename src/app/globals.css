@@ -25,3 +25,23 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+/* .typewriter-animation{ */
+  /* letter-spacing: 10px; */
+  /* animation: 
+    cursor .4s step-end infinite alternate; */
+/* } */
+
+@keyframes cursor {
+  50% { border-color: transparent }
+}
+
+@font-face {
+  font-family: 'codepro';
+  src: url("../../public/Source_Code_Pro/SourceCodePro-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: 'firacode';
+  src: url("https://fonts.googleapis.com/css?family=Fira Code");
+}
