@@ -1,12 +1,12 @@
 'use client'
-import Typed from 'typed.js';
+// import Typed from 'typed.js';
 import $ from "jquery";
 import './globals.css'
 import React from 'react'
 
-
 function TextTypingAnimate({value = "text", tag = "h1"}) {
     const el = React.useRef(null);
+	const Typed = require('typed.js');
 
 	if(tag === 'h1'){
 		React.useEffect(() => {
