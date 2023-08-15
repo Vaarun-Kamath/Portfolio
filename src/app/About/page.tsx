@@ -43,7 +43,7 @@ function about() {
                 <br/>
                 <div className='h-full w-full flex justify-center items-center gap-16'>
                     <a href='/#mywork' className='h-fit sticky top-0 pl-3 pt-3 flex items-center justify-center text-center border w-fit p-3 border-cyan-400 hover:bg-cyan-400 hover:text-stone-800 duration-200'>My Work</a>
-                    <a href='/Resume' className='h-fit sticky top-0 pl-3 pt-3 flex items-center justify-center text-center border w-fit p-3 border-cyan-400 hover:bg-cyan-400 hover:text-stone-800 duration-200'>Resume</a>
+                    <a href='/Resume' target='_blank' className='h-fit sticky top-0 pl-3 pt-3 flex items-center justify-center text-center border w-fit p-3 border-cyan-400 hover:bg-cyan-400 hover:text-stone-800 duration-200'>Resume</a>
                 </div>
             </div>
         </section>
