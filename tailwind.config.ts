@@ -11,6 +11,7 @@ const config: Config = {
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'gradient-conic':  'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+				'profile-pic': "url('/public/Me.jpg')",
 			},
 			fontSize: {
 				'4xl': '2.441rem',
@@ -19,7 +20,14 @@ const config: Config = {
 			fontFamily:{
 				codepro:'codepro',
 				firacode: 'firacode',
-			}
+			},
+			width: {
+				'50rem':'50rem',
+			},
+			height: {
+				'50rem':'50rem',
+				'25rem':'25rem',
+			},
 		},
 
 	},

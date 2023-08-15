@@ -1,22 +1,26 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Fira_Code } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] })
+
+const FiraCode = Fira_Code({
+	subsets: ['latin'],
+	weight: ['400', '500'],
+})
 
 export const metadata: Metadata = {
-  title: 'Varun Kamath',
-  description: 'My portfolio',
+	title: 'Varun Kamath',
+	description: 'My portfolio',
 }
 
 export default function RootLayout({
-  children,
+	children,
 }: {
-  children: React.ReactNode
+	children: React.ReactNode
 }) {
-  return (
-    <html lang="en" className='scroll-smooth overflow-y-scroll'>
-      <body className='scrollbar-hide bg-stone-800'>{children}</body>
-    </html>
-  )
+	return (
+		<html lang="en" className= {FiraCode.className + ' scroll-smooth overflow-y-scroll'}>
+			<body className='scrollbar-hide bg-stone-800 text-slate-200'>{children}</body>
+		</html>
+	)
 }
