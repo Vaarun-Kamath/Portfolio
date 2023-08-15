@@ -37,7 +37,7 @@ export default function Home() {
 				<div className='socials flex flex-row gap-16 justify-center items-center pl-3'>
 					<a target='_blank' href='https://twitter.com/Varun_K993'             className='w-fit h-fit flex justify-center items-center rounded text-4xl text-slate-200 shadow-md duration-200 hover:scale-110 hover:text-cyan-400'><span><IoLogoTwitter/></span></a>
 					<a target='_blank' href='https://www.linkedin.com/in/varunkamath03/' className='w-fit h-fit flex justify-center items-center rounded text-4xl text-slate-200 shadow-md duration-200 hover:scale-110 hover:text-cyan-400'><span><AiFillLinkedin/></span></a>
-					<a target='_blank' href='#contactme'                className='w-fit h-fit flex justify-center items-center rounded text-4xl text-slate-200 shadow-md duration-200 hover:scale-110 hover:text-cyan-400'><span><MdEmail/></span></a>
+					<a                 href='#contactme'                		         className='w-fit h-fit flex justify-center items-center rounded text-4xl text-slate-200 shadow-md duration-200 hover:scale-110 hover:text-cyan-400'><span><MdEmail/></span></a>
 					<a target='_blank' href='https://github.com/Vaarun-Kamath'           className='w-fit h-fit flex justify-center items-center rounded text-4xl text-slate-200 shadow-md duration-200 hover:scale-110 hover:text-cyan-400'><span><AiFillGithub/></span></a>
 					<a target='_blank' href='https://www.instagram.com/varun_k993/'      className='w-fit h-fit flex justify-center items-center rounded text-4xl text-slate-200 shadow-md duration-200 hover:scale-110 hover:text-cyan-400'><span><AiFillInstagram/></span></a>
 				</div>
