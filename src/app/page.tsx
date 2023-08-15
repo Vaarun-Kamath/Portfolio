@@ -15,7 +15,7 @@ import DeepLearningCarPic from '../../public/Projects/DeepLearningCars.png'
 import CIMDPPic from '../../public/Projects/Forcasting.png'
 import RiftPic from '../../public/Projects/Rift.png'
 import TerminalMonopoyPic from '../../public/Projects/Monopoly.png'
-
+import Contact from './contact'
 
 export default function Home() {
 	// const Resume = require("./Resume.pdf")
@@ -37,7 +37,7 @@ export default function Home() {
 				<div className='socials flex flex-row gap-16 justify-center items-center pl-3'>
 					<a href='https://twitter.com/Varun_K993'             className='w-fit h-fit flex justify-center items-center rounded text-4xl text-slate-200 shadow-md duration-200 hover:scale-110 hover:text-cyan-400'><span><IoLogoTwitter/></span></a>
 					<a href='https://www.linkedin.com/in/varunkamath03/' className='w-fit h-fit flex justify-center items-center rounded text-4xl text-slate-200 shadow-md duration-200 hover:scale-110 hover:text-cyan-400'><span><AiFillLinkedin/></span></a>
-					<a href='/InProgress'                className='w-fit h-fit flex justify-center items-center rounded text-4xl text-slate-200 shadow-md duration-200 hover:scale-110 hover:text-cyan-400'><span><MdEmail/></span></a>
+					<a href='#contactme'                className='w-fit h-fit flex justify-center items-center rounded text-4xl text-slate-200 shadow-md duration-200 hover:scale-110 hover:text-cyan-400'><span><MdEmail/></span></a>
 					<a href='https://github.com/Vaarun-Kamath'           className='w-fit h-fit flex justify-center items-center rounded text-4xl text-slate-200 shadow-md duration-200 hover:scale-110 hover:text-cyan-400'><span><AiFillGithub/></span></a>
 					<a href='https://www.instagram.com/varun_k993/'      className='w-fit h-fit flex justify-center items-center rounded text-4xl text-slate-200 shadow-md duration-200 hover:scale-110 hover:text-cyan-400'><span><AiFillInstagram/></span></a>
 				</div>
@@ -149,9 +149,12 @@ export default function Home() {
 				<div className='w-full h-fit mb-10 flex justify-center items-end'>
 					<a href='/InProgress'  className='w-fit h-fit border p-3 hover:bg-cyan-400 hover:text-stone-800 border-cyan-400 duration-200'>View All Projects</a>
 				</div>
-				<div className='w-full h-screen p-10 bg-gradient-to-b from-zinc-900 to-black'>
-					<div className='w-full h-full'>
-
+				<div id='contactme' className='w-full h-screen p-10 bg-gradient-to-b from-zinc-900 to-black'>
+					<div className='w-full h-full flex justify-center items-center flex-col gap-16'>
+						<div className='w-full h-fit flex justify-center'>
+							<p className='text-4xl select-none'>Contact Me</p>
+						</div>
+						<Contact />
 					</div>
 				</div>
 			</section>
