@@ -20,15 +20,15 @@ function about() {
             </div>
             <div className='outline-double h-fit w-50rem p-10 flex flex-col'>
                 <p className='flex items-start flex-col'>
-                    Hey there! I'm a third-year B.Tech student at PES University, and I've got a thing for all things data and tech. You'll often find me diving into data analytics, data science, AI/ML stuff—I'm totally hooked.
+                    Hey there! I&apos;m a third-year B.Tech student at PES University, and I&apos;ve got a thing for all things data and tech. You&apos;ll often find me diving into data analytics, data science, AI/ML stuff—I&apos;m totally hooked.
                     <br/><br/>
-                    Python is my jam, but I can groove with C/C++ and JavaScript too. Web development? Yep, I'm into that. I've worked my way around cool frameworks like ReactJS and NextJS, and I've tamed MongoDB, Postman, and ExpressJS.
+                    Python is my jam, but I can groove with C/C++ and JavaScript too. Web development? Yep, I&apos;m into that. I&apos;ve worked my way around cool frameworks like ReactJS and NextJS, and I&apos;ve tamed MongoDB, Postman, and ExpressJS.
                     <br/><br/>
-                    Projects? Oh yeah, I've got a bunch under my belt. Python, web development—done and done. Team projects? Love 'em. I'm a real team player. But hey, I've also rocked solo projects like a champ.
+                    Projects? Oh yeah, I&apos;ve got a bunch under my belt. Python, web development—done and done. Team projects? Love &apos;em. I&apos;m a real team player. But hey, I&apos;ve also rocked solo projects like a champ.
                     <br/><br/>
                     {/* Tech's my playground, and I'm all about learning and creating. Whether it's crunching data, building sleek web apps, or diving into the AI/ML wonderland, I'm up for the challenge.
                     <br/><br/> */}
-                    Feel free to poke around my portfolio and hit me up for a chat. Let's talk tech and maybe cook up something awesome together!
+                    Feel free to poke around my portfolio and hit me up for a chat. Let&apos;s talk tech and maybe cook up something awesome together!
                     <br/><br/>
                     Cheers,
                     <br/>
