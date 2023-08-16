@@ -10,9 +10,9 @@ const FiraCode = Fira_Code({
 export const metadata: Metadata = {
 	title: 'Varun Kamath',
 	description: 'My portfolio',
-	icons: {
-		icon: "icon.png"
-	},
+	// icons: {
+	// 	icon: "icon.png"
+	// },
 }
 
 export default function RootLayout({

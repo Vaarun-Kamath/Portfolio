@@ -1,4 +1,4 @@
-'use client'
+'use client';
 // import Typed from 'typed.js';
 import $ from "jquery";
 import './globals.css'

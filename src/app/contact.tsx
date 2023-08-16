@@ -8,15 +8,15 @@ function ContactForm() {
     }
     return (
 		<div className='h-fit w-full flex justify-center items-center flex-col'>
-			<form onSubmit={handleSubmit} className='flex justify-center items-center flex-col'>
-				<input id="email" type="email" name="email" color='#111112' placeholder='Your Email' required className='text-zinc-900 outline-none p-2 w-96'/>
+			<form onSubmit={handleSubmit} className='flex justify-center items-center flex-col w-full'>
+				<input id="email" type="email" name="email" color='#111112' placeholder='Your Email' required className='text-slate-200 outline-none p-2 w-full bg-transparent border border-cyan-400'/>
 				<br/><br/>
 				<ValidationError 
 					prefix="Email" 
 					field="email"
 					errors={state.errors}
 				/>
-				<textarea id="message" placeholder='Body' name="message" color='#111112' required className='text-zinc-900 outline-none p-2 flex items-center w-96 h-32'/>
+				<textarea id="message" placeholder='Body' name="message" color='#111112' required className='text-slate-200 outline-none p-2 flex items-center w-full h-32 bg-transparent border border-cyan-400'/>
 				<br/><br/>
 				<ValidationError 
 					prefix="Message" 

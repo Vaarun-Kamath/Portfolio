@@ -22,13 +22,20 @@ const config: Config = {
 				firacode: 'firacode',
 			},
 			width: {
-				'50rem':'50rem',
-			},
-			height: {
-				'50rem':'50rem',
 				'25rem':'25rem',
+				'30rem':'30rem',
+				'40rem':'40rem',
+				'45rem':'45rem',
+				'50rem':'50rem',
 				'55rem':'55rem',
 				'60rem':'60rem',
+			},
+			height: {
+				'25rem':'25rem',
+				'50rem':'50rem',
+				'55rem':'55rem',
+				'60rem':'60rem',
+				'70rem':'70rem',
 			},
 		},
 
