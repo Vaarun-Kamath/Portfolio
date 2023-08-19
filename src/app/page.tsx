@@ -71,7 +71,9 @@ export default function Home() {
 				</div>
 				<div className='m-4 flex flex-1 flex-col items-center gap-10'>
 					<div className='w-full h-fit mb-10 flex justify-center items-end'>
-						<a href='/InProgress'  className='w-fit h-fit border p-3 hover:bg-cyan-400 hover:text-stone-800 border-cyan-400 duration-200'>View All Projects</a>
+						{/* <a href='/MyProjects'  className='w-fit h-fit border p-3 hover:bg-cyan-400 hover:text-stone-800 border-cyan-400 duration-200'>View All Projects</a> */}
+						<p className=' w-fit h-fit border p-3 select-none border-gray-600 duration-200'>View All Projects</p>
+									
 					</div>
 					<div className='w-full h-fit flex items-center justify-center'>
 						<p className='text-2xl md:text-4xl text-center select-none w-full'>Featured Projects</p>
@@ -92,7 +94,8 @@ export default function Home() {
 							</p>
 							<br/>
 							<div className='w-full flex flex-row  gap-10'>
-								<a href='/InProgress'   className='w-fit h-fit border p-3 hover:bg-cyan-400 hover:text-stone-800 border-cyan-400 duration-200'>Demo</a>
+								{/* <a href='/InProgress'  className=' w-fit h-fit border p-3 hover:bg-cyan-400 hover:text-stone-800 border-cyan-400 duration-200'>Demo</a> */}
+								<p className=' w-fit h-fit border p-3 select-none border-gray-600 duration-200'>Demo</p>
 								<a href='https://github.com/Vaarun-Kamath/Deep-Learning-Cars' target='_blank'   className='w-fit h-fit border p-3 hover:bg-cyan-400 hover:text-stone-800 border-cyan-400 duration-200'>Code</a>
 							</div>
 							<p className='w-full text-center text-lg font-semibold text-cyan-400'>1/4</p>
@@ -109,7 +112,8 @@ export default function Home() {
 							</p>
 							<br/>
 							<div className='w-full flex flex-row  gap-10'>
-								<a href='/InProgress'   className='w-fit h-fit border p-3 hover:bg-cyan-400 hover:text-stone-800 border-cyan-400 duration-200'>Demo</a>
+								{/* <a href='/InProgress'   className='w-fit h-fit border p-3 hover:bg-cyan-400 hover:text-stone-800 border-cyan-400 duration-200'>Demo</a> */}
+								<p className=' w-fit h-fit border p-3 select-none border-gray-600 duration-200'>Demo</p>
 								<a href='https://github.com/Vaarun-Kamath/HashCode-Cisco-Inventory-Management-and-Demand-Prediction' target='_blank'   className='w-fit h-fit border p-3 hover:bg-cyan-400 hover:text-stone-800 border-cyan-400 duration-200'>Code</a>
 							</div>
 							<p className='w-full text-center text-lg font-semibold text-cyan-400'>2/4</p>
@@ -128,7 +132,7 @@ export default function Home() {
 							</p>
 							<br/>
 							<div className='w-full flex flex-row  gap-10'>
-								<a href='/InProgress'   className='w-fit h-fit border p-3 hover:bg-cyan-400 hover:text-stone-800 border-cyan-400 duration-200'>Demo</a>
+								<p className=' w-fit h-fit border p-3 select-none border-gray-600 duration-200'>Demo</p>
 								<a href='https://github.com/Vaarun-Kamath/Rift' target='_blank'   className='w-fit h-fit border p-3 hover:bg-cyan-400 hover:text-stone-800 border-cyan-400 duration-200'>Code</a>
 							</div>
 							<p className='w-full text-center text-lg font-semibold text-cyan-400'>3/4</p>
@@ -145,7 +149,7 @@ export default function Home() {
 							</p>
 							<br/>
 							<div className='w-full flex flex-row  gap-10'>
-								<a href='/InProgress'   className='w-fit h-fit border p-3 hover:bg-cyan-400 hover:text-stone-800 border-cyan-400 duration-200'>Demo</a>
+								<p className=' w-fit h-fit border p-3 select-none border-gray-600 duration-200'>Demo</p>
 								<a href='https://github.com/Vaarun-Kamath/Monopoly-Game' target='_blank'   className='w-fit h-fit border p-3 hover:bg-cyan-400 hover:text-stone-800 border-cyan-400 duration-200'>Code</a>
 							</div>
 							<p className='w-full text-center text-lg font-semibold text-cyan-400'>4/4</p>

@@ -23,8 +23,8 @@ export default function RootLayout({
 	const dns = require("dns");
 	dns.setDefaultResultOrder("ipv4first")
 	return (
-		<html lang="en" className= {FiraCode.className + ' scroll-smooth overflow-y-scroll'}>
-			<body className='scrollbar-hide bg-stone-800 text-slate-200'>{children}</body>
+		<html lang="en" className= {FiraCode.className + ' scroll-smooth overflow-y-scroll '}>
+			<body className='scrollbar-hide bg-black text-slate-200'>{children}</body>
 		</html>
 	)
 }
