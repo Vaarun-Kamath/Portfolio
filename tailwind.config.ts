@@ -28,7 +28,7 @@ const config: Config = {
 				'45rem':'45rem',
 				'50rem':'50rem',
 				'55rem':'55rem',
-				'60rem':'60rem',
+				'hello':'60rem',
 			},
 			height: {
 				'25rem':'25rem',
@@ -36,6 +36,9 @@ const config: Config = {
 				'55rem':'55rem',
 				'60rem':'60rem',
 				'70rem':'70rem',
+			},
+			boxShadow:{
+				'card': '0 0px 10px 1px rgba(0, 0, 0, 0.1)',
 			},
 		},
 
