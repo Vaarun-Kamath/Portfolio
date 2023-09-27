@@ -3,7 +3,7 @@ const resume = () => {
     return (
         // <div>hello</div>
         <div className="h-screen w-full">
-            <iframe src='Resume_WebDev.pdf' width={'100%'} height={'100%'}/>
+            <iframe src='MyResume_W.pdf' width={'100%'} height={'100%'}/>
         </div>
     );
 };
