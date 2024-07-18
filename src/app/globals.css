@@ -27,21 +27,47 @@
 } */
 
 /* .typewriter-animation{ */
-  /* letter-spacing: 10px; */
-  /* animation: 
+/* letter-spacing: 10px; */
+/* animation: 
     cursor .4s step-end infinite alternate; */
 /* } */
 
 @keyframes cursor {
-  50% { border-color: transparent }
+  50% {
+    border-color: transparent;
+  }
 }
 
 @font-face {
-  font-family: 'codepro';
+  font-family: "codepro";
   src: url("../../public/Source_Code_Pro/SourceCodePro-VariableFont_wght.ttf");
 }
 
 @font-face {
-  font-family: 'firacode';
+  font-family: "firacode";
   src: url("https://fonts.googleapis.com/css?family=Fira Code");
+}
+
+.marquee-container {
+  position: absolute;
+  overflow: hidden;
+}
+/* --gradient-color: #; --gradient-width: 60px; */
+.marquee-container::before,
+.marquee-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px; /* Adjust the width as needed */
+  z-index: 1;
+}
+
+.marquee-container::before {
+  left: 0;
+  /* Blur the background */
+}
+
+.marquee-container::after {
+  right: 0;
 }

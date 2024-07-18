@@ -1,3 +1,4 @@
+import ContactSection from "@/components/Sections/ContactSection";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Fira_Code } from "next/font/google";
@@ -29,7 +30,10 @@ export default function RootLayout({
         FiraCode.className + " scroll-smooth overflow-x-hidden scrollbar-hide"
       }
     >
-      <body className="bg-black text-slate-200">{children}</body>
+      <body className="bg-gradient-to-b from-black to-zinc-900 text-slate-200">
+        {children}
+        <ContactSection />
+      </body>
     </html>
   );
 }

@@ -1,20 +1,14 @@
 import React from "react";
-import "../globals.css";
 import Image from "next/image";
-import ProfilePic from "../../../public/Me.jpg";
-import TextTypingAnimate from "../TextTypingAnimate";
+import TextTypingAnimate from "@/components/TextTypingAnimate";
+import StyledLink from "@/components/StyledLink";
 
 function about() {
   return (
     <main className="bg-gradient-to-b from-black to-zinc-900 flex flex-col min-h-screen gap-3">
       <nav className="bg-transparent relative z-10 p-4 top-0 w-full flex flex-row gap-11 items-center">
-        <a
-          href="/"
-          className="h-fit sticky top-0 pl-3 pt-3 flex items-center justify-center text-center border w-20 p-3 border-cyan-400 hover:bg-cyan-400 hover:text-stone-800 duration-200 transition-all"
-        >
-          Home
-        </a>
         {/* <div className='text-center flex w-full h-full justify-center items-center'></div> */}
+        <StyledLink href="/">Home</StyledLink>
         <div className="flex-1">
           <h1 className="text-4xl">About Me</h1>
         </div>
@@ -26,7 +20,7 @@ function about() {
         <div className="pfp h-80 w-80 rounded-3xl overflow-hidden relative">
           <Image
             alt="ProfilePic"
-            src={ProfilePic}
+            src={"/Me.jpg"}
             layout="fill"
             objectFit="cover"
           />
@@ -58,19 +52,10 @@ function about() {
           {/* <p className='text-xl'>Check out my work!</p> */}
           <br />
           <div className="h-full w-full flex justify-center items-center gap-16">
-            <a
-              href="/#mywork"
-              className="h-fit sticky top-0 pl-3 pt-3 flex items-center justify-center text-center border w-fit p-3 border-cyan-400 hover:bg-cyan-400 hover:text-stone-800 duration-200 transition-all"
-            >
-              My Work
-            </a>
-            <a
-              href="/Resume"
-              target="_blank"
-              className="h-fit sticky top-0 pl-3 pt-3 flex items-center justify-center text-center border w-fit p-3 border-cyan-400 hover:bg-cyan-400 hover:text-stone-800 duration-200 transition-all"
-            >
+            <StyledLink href="/#mywork">My Work</StyledLink>
+            <StyledLink href="/Resume" type="external">
               Resume
-            </a>
+            </StyledLink>
           </div>
         </div>
       </section>

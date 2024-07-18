@@ -1,26 +1,31 @@
-import TextTypingAnimate from "@/app/TextTypingAnimate";
-import { socials } from "@/constants/socials";
+import TextTypingAnimate from "@/components/TextTypingAnimate";
+import { jumpLinks, socials, techStack } from "@/constants";
 import React from "react";
-
+import Marquee from "react-fast-marquee";
+import { TextSeperator } from "../TextSeperator";
+import StyledLink from "../StyledLink";
 function FrontPage() {
   return (
-    <section
-      className="page1 min-h-screen w-screen bg-gradient-to-b from-black to-zinc-900 flex flex-col items-center justify-center gap-16"
+    <div
+      className="h-screen flex justify-center items-center flex-col gap-10"
       id="top"
     >
-      <div className="myNameContainer h-full w-full flex flex-col items-center justify-center gap-5">
-        <div className="flex justify-center items-center h-10 text-center pl-10">
+      <div className="flex flex-col items-center justify-center gap-10 w-full">
+        <span className="flex justify-center items-center text-center">
           <TextTypingAnimate value="Varun Kamath" tag="h1" />
-        </div>
-        <div className="flex justify-center items-center mr-16 ml-16 text-center">
-          <h3>
-            Aspiring Software Developer | Big Data Enthusiast | Full Stack
-            Developer
-          </h3>
+        </span>
+        <div className="w-full px-32 flex justify-center items-center flex-col gap-3 sm:gap-2 sm:flex-row text-center">
+          <TextSeperator showBar={false} />
+          <p className="lg:text-lg sm:text-xs">Aspiring Software Developer</p>
+          <TextSeperator showBar={true} />
+          <p className="lg:text-lg sm:text-xs">Big Data Enthusiast</p>
+          <TextSeperator showBar={true} />
+          <p className="lg:text-lg sm:text-xs">Full Stack Developer</p>
+          <TextSeperator showBar={false} />
         </div>
       </div>
 
-      <div className="socials w-full h-fit flex flex-row gap-10 justify-center items-center">
+      <div className="flex flex-wrap gap-10 justify-center items-center">
         {socials.map((social, index) => {
           return (
             <a
@@ -34,29 +39,64 @@ function FrontPage() {
           );
         })}
       </div>
-      <div className="jump flex flex-row gap-10 p-3">
-        <a
-          href="/About"
-          className="w-fit h-fit border p-2 md:p-3 hover:bg-cyan-400 hover:text-stone-800 border-cyan-400 duration-200 transition-all"
-        >
-          About Me
-        </a>
-        <a
-          href="#mywork"
-          className="w-fit h-fit border p-2 md:p-3 hover:bg-cyan-400 hover:text-stone-800 border-cyan-400 duration-200 transition-all"
-        >
-          My Work
-        </a>
-        <a
-          href="/Resume"
-          className="w-fit h-fit border p-2 md:p-3 hover:bg-cyan-400 hover:text-stone-800 border-cyan-400 duration-200 transition-all"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Resume
-        </a>
+      <div className="flex flex-wrap gap-5 md:gap-10 justify-center">
+        {jumpLinks.map((link, index) => {
+          return (
+            <StyledLink
+              key={index}
+              href={link.link}
+              className="w-20 px-5 py-2 text text-xs md:w-32 md:text-sm"
+            >
+              {link.name}
+            </StyledLink>
+          );
+        })}
       </div>
-    </section>
+      <div className="absolute bottom-0 md:bottom-5 w-full">
+        <Marquee
+          gradient
+          gradientColor="#000000"
+          gradientWidth={"200px"}
+          pauseOnHover
+          className="transition-all duration-200 opacity-75"
+        >
+          <div className="flex flex-row gap-10 overflow-hidden">
+            {techStack.map((stack, index) => {
+              return (
+                <div
+                  key={index}
+                  className={`flex flex-col gap-2 items-center justify-between ${
+                    index === 0
+                      ? "ml-5"
+                      : index === techStack.length - 1
+                      ? "mr-5"
+                      : ""
+                  }`}
+                >
+                  <p className="text-lg">{stack.topic}</p>
+                  <div className="flex flex-row gap-5">
+                    {stack.items.map((item, index) => {
+                      return (
+                        <div
+                          key={index}
+                          className={
+                            "flex flex-col items-center justify-between gap-1 " +
+                            (index === 0 ? "" : "")
+                          }
+                        >
+                          <span className="text-3xl">{item.icon}</span>
+                          <p className="text-xs">{item.name}</p>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </Marquee>
+      </div>
+    </div>
   );
 }
 
