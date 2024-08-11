@@ -5,21 +5,21 @@ import { featuredProjects } from "@/constants/data";
 
 function FeaturedSection() {
   return (
-    <section
-      className="flex flex-col gap-32 border-t-4 border-neutral-900 shadow-2xl rounded-md"
+    <div
+      className="flex flex-col border-t-4 border-neutral-950 shadow-2xl rounded-md"
       id="mywork"
     >
-      <div className="m-4 flex flex-1 flex-col items-center gap-10">
-        <h1 className="text-4xl text-center">Featured Projects</h1>
-        <div className="grid grid-cols-2 grid-rows-2 gap-10">
+      <div className="flex flex-1 flex-col items-center gap-10">
+        <h1 className="lg:text-3xl text-sm text-center">Featured Projects</h1>
+        <div className="grid md:grid-cols-2 md:grid-rows-2 gap-10">
           {featuredProjects.map((project, index) => {
             return (
               <div
                 key={index}
-                className="bg-neutral-950 bg-opacity-50 overflow-hidden items-center flex gap-6 flex-col p-10"
+                className="bg-neutral-950 bg-opacity-50 overflow-hidden items-center flex gap-6 flex-col lg:p-10 p-3"
               >
-                <div className="h-1/2 flex flex-col gap-2">
-                  <p className="text-xl text-center w-full font-bold text-cyan-400">
+                <div className="h-1/2 flex flex-col gap-2 ">
+                  <p className=" text-center w-full font-bold text-cyan-400 lg:text-xl md:text-base text-xs">
                     {project.title}
                   </p>
                   <Image
@@ -28,7 +28,7 @@ function FeaturedSection() {
                     className="rounded-md"
                   />
                 </div>
-                <div className="h-1/2 text-sm">
+                <div className=" lg:text-base text-xs">
                   <ul className="w-full flex flex-col gap-2">
                     <li>
                       <b>Programming Language: </b>
@@ -46,7 +46,7 @@ function FeaturedSection() {
                   </ul>
                   <br />
                 </div>
-                <div className="w-full flex flex-row gap-10">
+                <div className="w-full flex flex-row gap-10 md:text-base text-xs my-2">
                   <button
                     disabled={true}
                     className="h-fit border p-3 select-none border-gray-600 duration-200 transition-all"
@@ -67,11 +67,11 @@ function FeaturedSection() {
             );
           })}
         </div>
-        <StyledLink href={"/my-projects"} className="w-1/5">
+        <StyledLink href={"/my-projects"} className="w-fit p-3 m-3">
           All Projects
         </StyledLink>
       </div>
-    </section>
+    </div>
   );
 }
 

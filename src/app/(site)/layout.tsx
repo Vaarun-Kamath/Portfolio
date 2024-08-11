@@ -1,3 +1,5 @@
+import ContactSection from "@/components/Sections/ContactSection";
+
 export default async function SiteLayout({
   children,
 }: {
@@ -6,6 +8,7 @@ export default async function SiteLayout({
   return (
     <div className="min-h-screen w-screen bg-gradient-to-b from-black to-zinc-900">
       {children}
+      <ContactSection />
     </div>
   );
 }

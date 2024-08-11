@@ -3,8 +3,8 @@ import React from "react";
 
 function FlexSection() {
   return (
-    <div className="flex flex-col gap-10 w-1/2">
-      <div className="grid grid-cols-4 gap-5 select-none">
+    <div className="flex flex-col gap-10">
+      <div className="grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 select-none">
         {flexCards.map((flex, index) => {
           return (
             <div

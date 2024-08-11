@@ -1,6 +1,6 @@
 // 'use-client';
 import React from "react";
-import "./globals.css";
+import "../globals.css";
 import FrontPage from "@/components/Sections/FrontPage";
 import FeaturedSection from "@/components/Sections/FeaturedSection";
 import ContactSection from "@/components/Sections/ContactSection";

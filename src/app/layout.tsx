@@ -32,7 +32,6 @@ export default function RootLayout({
     >
       <body className="bg-gradient-to-b from-black to-zinc-900 text-slate-200">
         {children}
-        <ContactSection />
       </body>
     </html>
   );

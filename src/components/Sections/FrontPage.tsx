@@ -25,7 +25,7 @@ function FrontPage() {
         </div>
       </div>
 
-      <div className="flex flex-wrap gap-10 justify-center items-center">
+      <div className="flex flex-wrap gap-10 justify-center items-center mx-3">
         {socials.map((social, index) => {
           return (
             <a
@@ -39,7 +39,7 @@ function FrontPage() {
           );
         })}
       </div>
-      <div className="flex flex-wrap gap-5 md:gap-10 justify-center">
+      <div className="flex flex-wrap gap-5 md:gap-10 justify-center mx-2">
         {jumpLinks.map((link, index) => {
           return (
             <StyledLink
@@ -52,7 +52,7 @@ function FrontPage() {
           );
         })}
       </div>
-      <div className="absolute bottom-0 md:bottom-5 w-full">
+      <div className="lg:absolute bottom-0 md:bottom-5 w-full">
         <Marquee
           gradient
           gradientColor="#000000"
@@ -73,7 +73,7 @@ function FrontPage() {
                       : ""
                   }`}
                 >
-                  <p className="text-lg">{stack.topic}</p>
+                  <p className="md:text-lg">{stack.topic}</p>
                   <div className="flex flex-row gap-5">
                     {stack.items.map((item, index) => {
                       return (
@@ -84,7 +84,7 @@ function FrontPage() {
                             (index === 0 ? "" : "")
                           }
                         >
-                          <span className="text-3xl">{item.icon}</span>
+                          <span className="md:text-3xl">{item.icon}</span>
                           <p className="text-xs">{item.name}</p>
                         </div>
                       );
